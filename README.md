@@ -2,7 +2,7 @@
 
 This is a mobile Tetris app with motion controls.
 
-#Features
+## Features
 - Accelarator
 - Basic tetris
 - Mobile
