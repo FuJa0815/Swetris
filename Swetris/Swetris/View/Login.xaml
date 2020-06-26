@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Swetris.View.Login" Title="Set Name">
+    <StackLayout VerticalOptions="Center" Margin="50,0,50,50">
+        <Image Source="Logo"/>
+        <Entry Placeholder="Name" Margin="0,50,0,0" Text="{Binding Name}" IsTextPredictionEnabled="False" MaxLength="255" ReturnCommand="{Binding UseNameCommand}" ReturnType="Go"/>
+        <Button Text="Use Name" Command="{Binding UseNameCommand}" IsEnabled="{Binding MayClickButton}"/>
+    </StackLayout>
+</ContentPage>
